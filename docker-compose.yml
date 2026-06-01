@@ -1,0 +1,57 @@
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+
+  postgres-assinatura:
+    image: postgres:16
+    container_name: postgres-assinatura
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: adm
+      POSTGRES_DB: loja
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_assinatura_data:/var/lib/postgresql/data
+
+  postgres-pagamento:
+    image: postgres:16
+    container_name: postgres-pagamento
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: adm
+      POSTGRES_DB: pagamento
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_pagamento_data:/var/lib/postgresql/data
+  
+
+  postgres-planos:
+    image: postgres:16
+    container_name: postgres-planos
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: adm
+      POSTGRES_DB: cachePlanos
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_planos_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_assinatura_data:
+  postgres_pagamento_data:
+  postgres_planos_data:

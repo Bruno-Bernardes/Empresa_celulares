@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Build/compilado
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Variáveis de ambiente (NUNCA suba!)
+.env
+.env.local
+.env.development
+.env.production
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
