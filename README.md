@@ -14,15 +14,15 @@
 
 | Camada | Tecnologia |
 |---|---|
-| Linguagem | <!-- ex: Node.js, Java, Python --> |
-| Framework | <!-- ex: Express, Spring Boot, FastAPI --> |
-| Banco de dados (Gestão) | <!-- ex: PostgreSQL, MySQL --> |
-| Banco de dados (Faturamento) | <!-- ex: PostgreSQL, MongoDB --> |
-| Cache | <!-- ex: Redis, in-memory --> |
-| Broker de mensagens | <!-- ex: RabbitMQ, Kafka --> |
-| Gerenciador de pacotes | <!-- ex: npm, yarn, maven --> |
-| Containerização | <!-- ex: Docker, Docker Compose --> |
-| Testes | <!-- ex: Jest, JUnit --> |
+| Linguagem | <TypeScript |
+| Framework | Nest.js |
+| Banco de dados (Gestão) | PostgreSQL|
+| Banco de dados (Faturamento) | PostgreSQL |
+| Cache | PostgreSQL |
+| Broker de mensagens | RabbitMQ |
+| Gerenciador de pacotes | NPM |
+| Containerização | Dcoker Compose |
+
 
 ---
 
