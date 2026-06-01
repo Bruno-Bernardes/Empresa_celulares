@@ -14,7 +14,7 @@
 
 | Camada | Tecnologia |
 |---|---|
-| Linguagem | <TypeScript |
+| Linguagem | TypeScript |
 | Framework | Nest.js |
 | Banco de dados (Gestão) | PostgreSQL|
 | Banco de dados (Faturamento) | PostgreSQL |
